@@ -127,8 +127,7 @@
           </div>
         </div>
       </div>
-      <hr>
-      <footer>WEATHER | a development website to demonstrate responsive design concepts.</footer>
+      <?php include 'includes/footer.php';?>
     </div>
   </body>
 

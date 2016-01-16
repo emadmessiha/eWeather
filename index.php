@@ -35,8 +35,7 @@
         </div>
         <div class="panel-footer" autocomplete="off"></div>
       </div>
-      <hr>
-      <footer>WEATHER | a development website to demonstrate responsive design concepts.</footer>
+      <?php include 'includes/footer.php';?>
     </div>
   </body>
 
