@@ -7,41 +7,14 @@
   
   <head>
     <title>WEATHER | Five day forecast</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="icon" 
-      type="image/png" 
-      href="images/eweather-icon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/five_day.js"></script>
+    <?php include 'includes/head-files.php';?>
+    <script type="text/javascript" src="/js/five_day.js"></script>
   </head>
   
   <body>
     <div class="container">
-      <div class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </button>
-            <a href="index.html" class="navbar-brand"><img height="25px" src="images/eweather.png">Emad WEATHER</a>
-          </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="/">Current</a>
-              </li>
-              <li class="active">
-                <a href="five-day">5-Day forecast</a>
-              </li>
-              <li>
-                <a href="help">Help</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      
+      <?php include 'includes/header-navigation.php';?>
       <a href="https://www.google.ca/#q=weather">Also check weather on GOOGLE</a><br />
 	  <p>We are committed to getting the latest weather forecast for you!</p>
       <div class="row">
