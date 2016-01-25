@@ -1,4 +1,8 @@
 <?php
+$current_page=basename($_SERVER['PHP_SELF']);
+$home="index.php";
+$fiveday="five-day.php";
+$help="help.php";
 
 ?>
 <div class="navbar navbar-default">
@@ -11,14 +15,14 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li>
+              <li<?php if($current_page==$home){ echo ' class="active"'; } ?>>
                 <a href="/">Current</a>
               </li>
-              <li>
-                <a href="five-day.php">5-Day forecast</a>
+              <li<?php if($current_page==$fiveday){ echo ' class="active"'; } ?>>
+                <a href="<?php echo $fiveday; ?>">5-Day forecast</a>
               </li>
-              <li class="active">
-                <a href="help.php">Help</a>
+              <li<?php if($current_page==$help){ echo ' class="active"'; } ?>>
+                <a href="<?php echo $help; ?>">Help</a>
               </li>
             </ul>
           </div>

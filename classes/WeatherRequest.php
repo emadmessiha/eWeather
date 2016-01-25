@@ -9,11 +9,13 @@ class WeatherRequest {
 
   /* Variables */
   var $weather_object;
+  var $current_date;
 
   /* Constructr */
   function __construct($region,$num_days) {
     $json_response = file_get_contents($this->buildUrl($region,$num_days));
     $this->weather_object = json_decode($json_response)->data;
+    $this->current_date= date('l jS \of F Y h:i:s A');
   }
 
   /* Private functions */
@@ -24,8 +26,17 @@ class WeatherRequest {
   }
   
   /* Public functions */
+  /* Current condition functions */
+  function getCurrentDate(){
+    return $this->current_date;
+  }
+
   function getCurrentCity(){
     return $this->weather_object->request[0]->query;
+  }
+
+  function getCurrentPrecipMM(){
+    return $this->weather_object->current_condition[0]->precipMM;
   }
 
   function getCurrentTempC(){
@@ -46,6 +57,11 @@ class WeatherRequest {
 
   function getCurrentWinddir16Point(){
     return $this->weather_object->current_condition[0]->winddir16Point;
+  }
+
+  /* Future forecast functions */
+  function getWeatherForecastList(){
+    return $this->weather_object->weather;
   }
 
 }
