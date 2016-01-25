@@ -22,9 +22,9 @@ $wr = new WeatherRequest("Toronto,Canada","1");
         <div class="panel-heading">
           <h1><?php echo $wr->getCurrentCity(); ?></h1>
           <div class="media">
-            <a class="pull-left" href="#">    <img id="weatherIconUrl" class="media-object" src="<?php echo $wr->getCurrentIconURL(); ?>">  </a>
+            <a class="pull-left" href="#"><img id="weatherIconUrl" class="media-object" src="<?php echo $wr->getCurrentIconURL(); ?>"></a>
             <div class="media-body">
-              <h4 class="media-heading" id="temp_C"><?php $wr->getCurrentTempC(); ?>&deg;C</h4>
+              <h4 class="media-heading" id="temp_C"><?php echo $wr->getCurrentTempC(); ?>&deg;C</h4>
               <p id="weatherDesc"><?php echo $wr->getCurrentDescription(); ?></p>
             </div>
           </div>
