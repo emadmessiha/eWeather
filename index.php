@@ -10,7 +10,6 @@ $wr = new WeatherRequest("Toronto,Canada","1");
   <head>
     <title>WEATHER | Current Weather forecast</title>
     <?php include 'includes/head-files.php';?>
-    <script type="text/javascript" src="js/index.js"></script>
   </head>
   
   <body>

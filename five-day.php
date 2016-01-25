@@ -10,7 +10,6 @@ $wr = new WeatherRequest("Toronto,Canada","5");
   <head>
     <title>WEATHER | Five day forecast</title>
     <?php include 'includes/head-files.php';?>
-    <script type="text/javascript" src="/js/five_day.js"></script>
   </head>
   
   <body>
