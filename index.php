@@ -1,4 +1,6 @@
 <?php
+require_once('classes/WeatherRequest.php');
+$wr = new WeatherRequest("Toronto,Canada","1");
 
 ?>
 <!doctype html>
@@ -18,19 +20,19 @@
       <a target="_blank" href="https://www.google.ca/#q=weather">Also check weather on GOOGLE</a><br />
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h1>Ottawa, ON Canada</h1>
+          <h1><?php echo $wr->getCurrentCity(); ?></h1>
           <div class="media">
-            <a class="pull-left" href="#">    <img id="weatherIconUrl" class="media-object" src="http://cdn.worldweatheronline.net/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png">  </a>
+            <a class="pull-left" href="#">    <img id="weatherIconUrl" class="media-object" src="<?php echo $wr->getCurrentIconURL(); ?>">  </a>
             <div class="media-body">
-              <h4 class="media-heading" id="temp_C">-12&deg;C</h4>
-              <p id="weatherDesc">Partly Cloudy</p>
+              <h4 class="media-heading" id="temp_C"><?php $wr->getCurrentTempC(); ?>&deg;C</h4>
+              <p id="weatherDesc"><?php echo $wr->getCurrentDescription(); ?></p>
             </div>
           </div>
         </div>
         <div class="panel-body" autocomplete="off">
-          <div>Wind Speed:&nbsp;<span id="windspeedKmph">17 kmph</span>
+          <div>Wind Speed:&nbsp;<span id="windspeedKmph"><?php echo $wr->getCurrentWindSpeedKmph(); ?> kmph</span>
           </div>
-          <div>Wind direction:&nbsp;<span id="winddir16Point">SEE</span>
+          <div>Wind direction:&nbsp;<span id="winddir16Point"><?php echo $wr->getCurrentWinddir16Point(); ?></span>
           </div>
         </div>
         <div class="panel-footer" autocomplete="off"></div>
