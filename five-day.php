@@ -1,6 +1,8 @@
 <?php
 require_once('classes/WeatherRequest.php');
-$wr = new WeatherRequest("Toronto,Canada","5");
+require_once('classes/ClientLocation.php');
+$cl = new ClientLocation();
+$wr = new WeatherRequest($cl->getCurrentCityExact(),"5");
 
 ?>
 <!doctype html>
