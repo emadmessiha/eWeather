@@ -6,7 +6,6 @@ $wr = new WeatherRequest($cl->getCurrentCityExact(),"1");
 
 ?>
 <!doctype html>
-
 <html>
   
   <head>

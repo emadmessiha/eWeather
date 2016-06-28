@@ -1,2 +1,111 @@
 a.navbar-brand{float:left;}
 .navbar-brand img{float:left;height:25px;}
+
+h1 img{margin:2px 7px;height:20px;}
+
+
+.weather-sprite {
+  background: url('../images/weather-icons-set.png') no-repeat
+}
+
+.sun {
+  background-position: -30px -35px;
+  width: 261px;
+  height: 253px;
+}
+
+.sun-rain {
+  background-position: -453px -14px;
+  width: 261px;
+  height: 270px;
+}
+
+.sun-clouds {
+  background-position: -1310px -14px;
+  width: 302px;
+  height: 226px;
+}
+
+.cloud {
+  background-position: -881px -59px;
+  width: 281px;
+  height: 171px;
+}
+
+.rain {
+  background-position: -20px -402px;
+  width: 281px;
+  height: 233px;
+}
+
+.thunder {
+  background-position: -463px -410px;
+  width: 281px;
+  height: 253px;
+}
+
+.various-clouds {
+  background-position: -873px -395px;
+  width: 295px;
+  height: 212px;
+}
+
+.thunder-showers {
+  background-position: -33px -776px;
+  width: 281px;
+  height: 253px;
+}
+
+.snow {
+  background-position: -470px -781px;
+  width: 281px;
+  height: 261px;
+}
+
+.clouds-rain {
+  background-position: -877px -761px;
+  width: 294px;
+  height: 290px;
+}
+
+.temp-cold {
+  background-position: -185px -1166px;
+  width: 116px;
+  height: 227px;
+}
+
+.temp-warm {
+  background-position: -41px -1166px;
+  width: 116px;
+  height: 227px;
+}
+
+.umbrella {
+  background-position: -457px -1160px;
+  width: 323px;
+  height: 238px;
+}
+
+.wind {
+  background-position: -958px -1158px;
+  width: 261px;
+  height: 246px;
+}
+
+.tornado {
+  background-position: -1338px -1156px;
+  width: 265px;
+  height: 257px;
+}
+
+.rainbow {
+  background-position: -1265px -817px;
+  width: 404px;
+  height: 163px;
+}
+
+.night-clouds {
+  background-position: -1312px -324px;
+  width: 302px;
+  height: 283px;
+}

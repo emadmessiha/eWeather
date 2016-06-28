@@ -2,11 +2,10 @@
 require_once('classes/WeatherRequest.php');
 require_once('classes/ClientLocation.php');
 $cl = new ClientLocation();
-$wr = new WeatherRequest($cl->getCurrentCityExact(),"5");
+$wr = new WeatherRequest($cl->getCurrentCityExact(),"1");
 
 ?>
 <!doctype html>
-
 <html>
   
   <head>

@@ -3,7 +3,7 @@
 ?>
 <div class="panel panel-default">
     <div class="panel-heading">
-      <h1><?php echo $wr->getCurrentCity(); ?></h1>
+      <h1><?php echo $wr->getCurrentCity(); ?><img src="images/loc.png" title="location automatically detected" /></h1>
       <p id="currentdate"><?php echo $wr->getCurrentDate(); ?></p>
       <div class="media">
         <a class="pull-left" href="#"><img id="weatherIconUrl" class="media-object" src="<?php echo $wr->getCurrentIconURL(); ?>"></a>
